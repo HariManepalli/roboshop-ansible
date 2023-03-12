@@ -1,9 +1,9 @@
-- name: Update prometheus Configuration
+- name: Update Prometheus Configuration
   ansible.builtin.template:
     src: prometheus.yml
     dest: /opt/prometheus/prometheus.yml
 
-- name: Restart prometheus
+- name: Restart Prometheus
   ansible.builtin.systemd:
     name: prometheus
     state: restarted
