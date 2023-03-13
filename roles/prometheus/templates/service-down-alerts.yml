@@ -1,0 +1,11 @@
+groups:
+  - name: roboshop-service-alerts
+    rules:
+      - alert: Service Down Alert - Cart service
+        expr: up < 1
+        for: 30s
+        labels:
+          severity: critical
+          appName: cart
+        annotations:
+          summary: Server-Down on some server - service Name - cart.service
