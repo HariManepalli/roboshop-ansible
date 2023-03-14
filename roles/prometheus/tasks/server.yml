@@ -30,4 +30,3 @@
 
 - name: Check Prometheus is started
   ansible.builtin.shell: netstat -lntp | grep 9093
-
