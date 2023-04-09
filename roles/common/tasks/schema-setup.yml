@@ -10,6 +10,7 @@
       ansible.builtin.yum:
         name: mongodb-org-shell
         state: installed
+
     - name: Download MongoDB Pem file
       ansible.builtin.get_url:
         url: https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem
